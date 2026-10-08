@@ -1,0 +1,145 @@
+.admin-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--white-secondary);
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radious-md);
+    padding: 24px;
+    margin-bottom: 1rem;
+}
+
+.admin-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.admin-card-title-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admin-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: var(--radious-sm);
+    background-color: var(--green-light-1);
+    color: var(--green-main);
+}
+
+.admin-card-title-group h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-main);
+    line-height: 19px;
+}
+
+.admin-card-team {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--green-main);
+}
+
+.admin-card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 1rem;
+    border-radius: var(--radious-lg);
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.admin-card-badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: currentColor;
+}
+
+.admin-card-badge-pending {
+    background-color: var(--yellow-light);
+    color: var(--yellow-main);
+    border: 1px solid var(--yellow-main);
+}
+
+.admin-card-badge-done {
+    background-color: var(--green-light-1);
+    color: var(--green-main);
+    border: 1px solid var(--green-main);
+}
+
+.admin-card-badge-error {
+    background-color: var(--red-light);
+    color: var(--red-main);
+}
+
+.admin-card-uploads {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-card-upload-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.admin-card-upload-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.admin-card-dropzone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 160px;
+    border: 1px dashed var(--gray-border);
+    border-radius: var(--radious-sm);
+    background-color: var(--white-main);
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.admin-card-dropzone:hover {
+    border-color: var(--green-main);
+    background-color: var(--green-light-2);
+}
+
+.admin-card-dropzone-icon {
+    color: var(--text-secondary);
+}
+
+.admin-card-completed {
+    border-color: var(--green-main);
+}
+
+.admin-card-dropzone-done {
+    border-style: solid;
+    border-color: var(--green-main);
+    background-color: var(--green-light-2);
+    color: var(--green-main);
+}
+
+.admin-card-dropzone-icon-done {
+    color: var(--green-main);
+}

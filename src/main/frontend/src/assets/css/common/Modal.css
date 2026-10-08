@@ -1,0 +1,311 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(15, 27, 45, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-content {
+    position: relative;
+    width: auto;
+    min-width: 700px;
+    background-color: var(--white-secondary);
+    border-radius: var(--radious-md);
+    padding: 38px;
+    box-shadow: 0 8px 32px rgba(15, 27, 45, 0.15);
+    box-sizing: border-box;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 50%;
+    transition: background-color 0.15s ease;
+}
+
+.modal-close-btn:hover {
+    background-color: var(--white-main);
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.modal-subtitle {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.modal-accounts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    border-radius: 50%;
+    background-color: var(--green-main);
+    color: var(--white-secondary);
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal-field {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.modal-group-2 {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+    .modal-group-2 .modal-field {
+        width: 50%;
+    }
+
+.modal-field label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.modal-field select,
+.modal-field textarea {
+    width: 100%;
+    background-color: var(--white-main);
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radious-md);
+    padding: 8px 14px;
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+    color: var(--text-main);
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.modal-field textarea {
+    resize: vertical;
+    min-height: 64px;
+}
+
+.modal-field select:focus,
+.modal-field textarea:focus,
+.modal-field-input-wrapper:has(input:focus) {
+    border-color: var(--green-main);
+}
+
+.modal-field-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-main);
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radious-md);
+    transition: border-color 0.2s ease;
+}
+
+.modal-field-icon {
+    position: absolute;
+    left: 12px;
+    color: var(--text-secondary);
+    pointer-events: none;
+}
+
+.modal-field-input-wrapper input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px 14px 8px 36px;
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+    color: var(--text-main);
+    box-sizing: border-box;
+}
+
+.modal-submit {
+    width: 100%;
+    height: 35px;
+    background-color: var(--green-main);
+    color: var(--white-secondary);
+    border: none;
+    border-radius: var(--radious-md);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: opacity 0.2s ease;
+    margin-top: 4px;
+}
+
+.modal-submit:hover {
+    opacity: 0.9;
+}
+
+.captcha-verification {
+    background-color: var(--white-main);
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radious-md);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.captcha-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.captcha-header-icon {
+    color: var(--green-main);
+    margin-top: 2px;
+}
+
+.captcha-header h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 2px;
+}
+
+.captcha-header p {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.captcha-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.captcha-tile {
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: var(--radious-sm);
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    background: none;
+    aspect-ratio: 1 / 1;
+    transition: border-color 0.15s ease, transform 0.1s ease;
+}
+
+.captcha-tile:hover {
+    transform: scale(1.02);
+}
+
+.captcha-tile img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.captcha-tile-selected {
+    border-color: var(--green-main);
+}
+
+.captcha-tile-selected::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(3, 182, 145, 0.25);
+}
+
+.captcha-tile-check {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--green-main);
+    color: var(--white-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.captcha-error {
+    font-size: 13px;
+    color: var(--red-main);
+    background-color: var(--red-light);
+    border-radius: var(--radious-sm);
+    padding: 10px 12px;
+}
+
+@media (max-width: 600px) {
+    .captcha-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Banner de saldo disponible dentro del modal de transferencia */
+.modal-balance-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-main);
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radious-sm);
+    padding: 12px 16px;
+    margin-bottom: 4px;
+}
+
+.modal-balance-label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.modal-balance-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--green-main);
+}

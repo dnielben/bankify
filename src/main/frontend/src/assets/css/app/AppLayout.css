@@ -1,0 +1,10 @@
+.app-layout {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--white-main);
+}
+
+.app-layout-content {
+    width: 100%;
+    box-sizing: border-box;
+}

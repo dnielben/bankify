@@ -1,0 +1,100 @@
+.hero-section {
+    width: 100%;
+    min-height: calc(100vh - 72px);
+    padding-top: 72px;
+    background-color: var(--white-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    box-sizing: border-box;
+}
+
+/* Columna Izquierda: Bloque de textos y botones */
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 46px;
+    font-weight: 800;
+    color: var(--text-main);
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+}
+
+.text-highlight {
+    color: var(--green-main);
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+}
+
+/* Contenedor horizontal para los dos botones */
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+}
+
+/* Variante específica para el segundo botón del Hero (borde gris sutil) */
+.bankify-btn-neutral-outline {
+    background-color: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--gray-border);
+}
+
+.bankify-btn-neutral-outline:hover {
+    background-color: rgba(15, 27, 45, 0.02);
+}
+
+/* Columna Derecha: Contenedor de la Ilustración */
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Control Responsivo */
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        gap: 32px;
+        padding-top: 40px;
+    }
+
+    .hero-content {
+        align-items: center;
+        text-align: center;
+    }
+}

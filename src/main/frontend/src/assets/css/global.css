@@ -1,0 +1,77 @@
+/* Font */
+/* En principio la fuente se importa de esta forma, luego se añadirá a los assets para optimizar */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /* Background */
+    --white-main: #F8FAFD;
+    --white-secondary: #FFFFFF;
+
+    --green-main: #03B691;
+    --green-light-1: #BFEDE3;
+    --green-light-2: #E7F5F6;
+
+    /* Others */
+    --red-main: #CF222E;
+    --red-light: #F2C9CC;
+
+    --yellow-main: #E38F00;
+    --yellow-light: #FCF6EB;
+
+    /* Text */
+    --text-secondary: #596475;
+    --text-main: #0F1B2D;
+
+    /* Border */
+    --gray-border: #D9DFE5; /* Color */
+    
+    /* Radious sizes */
+    --radious-lg: 30px;
+    --radious-md: 15px;
+    --radious-sm: 10px;
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+
+    --success-bg: var(--white-main);
+    --success-border: var(--green-main);
+    --success-text: var(--green-main);
+}
+
+body {
+    background-color: var(--white-main);
+}
+
+.main-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-toast {
+    background: var(--white-main) !important;
+    border: 1px solid var(--gray-border) !important;
+    color: var(--text-main) !important;
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 17px;
+}
+
+.custom-toast--success {
+    background: var(--green-light-2) !important;
+    border-color: var(--green-main) !important;
+    color: var(--green-main) !important;
+}
+
+.custom-toast--error {
+    background: var(--red-light) !important;
+    border-color: var(--red-main) !important;
+    color: var(--red-main) !important;
+}

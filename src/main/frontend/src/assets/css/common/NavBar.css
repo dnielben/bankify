@@ -1,0 +1,89 @@
+/* Contenedor principal de la barra */
+.bankify-navbar {
+    height: 72px; 
+    background-color: var(--white-main);
+    border-bottom: 1px solid var(--gray-border);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: medium;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar-logo img {
+    height: 56px; 
+    width: auto;
+    object-fit: contain;
+}
+
+/* Grupo de botones a la derecha */
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px; 
+}
+
+/* Enlaces centrales (autenticado) */
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar-link-item {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.navbar-link-item:hover {
+    color: var(--text-main);
+}
+
+/* Perfil de usuario (autenticado) */
+.navbar-user-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-main);
+    cursor: pointer;
+}
+
+.navbar-avatar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-user-avatar {
+    width: 24px;
+    height: 24px;
+    color: var(--text-secondary);
+}
+
+.navbar-user-name {
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-right: 10px;
+}

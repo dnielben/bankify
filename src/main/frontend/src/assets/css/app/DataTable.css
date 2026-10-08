@@ -1,0 +1,80 @@
+.data-table-wrapper {
+    width: 100%;
+    background-color: var(--white-secondary);
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radious-md);
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "DM Sans", sans-serif;
+}
+
+.data-table thead tr {
+    border-bottom: 1px solid var(--gray-border);
+}
+
+.data-table th {
+    text-align: left;
+    padding: 14px 20px;
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.data-table td {
+    padding: 16px 20px;
+    font-size: 13px;
+    color: var(--text-main);
+    font-weight: 550;
+    white-space: nowrap;
+    color: var(--text-main);
+}
+
+.data-table tbody tr:not(:last-child) {
+    border-bottom: 1px solid var(--gray-border);
+}
+
+.data-table tbody tr:hover {
+    background-color: var(--white-main);
+}
+
+.data-table-empty {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 32px 20px;
+}
+
+.credit-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.credit-status--pending {
+    background-color: var(--yellow-light);
+    color: var(--yellow-main);
+    border: 1px solid color-mix(in srgb, var(--yellow-main) 30%, transparent);
+}
+
+.credit-status--approved {
+    background-color: var(--green-light-2);
+    color: var(--green-main);
+    border: 1px solid color-mix(in srgb, var(--green-main) 30%, transparent);
+}
+
+.credit-status--rejected {
+    background-color: var(--red-light);
+    color: var(--red-main);
+    border: 1px solid color-mix(in srgb, var(--red-main) 30%, transparent);
+}

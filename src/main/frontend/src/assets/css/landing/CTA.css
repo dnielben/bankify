@@ -1,0 +1,77 @@
+.cta-section {
+    width: 100%;
+    background-color: var(--white-main);
+    padding: 60px 0 100px 0;
+    box-sizing: border-box;
+}
+
+.cta-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+.cta-box {
+    background-color: var(--green-main);
+    border-radius: var(--radious-lg);
+    padding: 80px 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.cta-box h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--white-secondary);
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+}
+
+.cta-box p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white-secondary);
+    max-width: 600px;
+    margin: 0 0 40px 0;
+    line-height: 1.5;
+    opacity: 0.95;
+}
+
+.bankify-btn-white {
+    background-color: var(--white-secondary);
+    color: var(--green-main);
+    border: none;
+    padding: 14px 36px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bankify-btn-white:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+    .cta-box {
+        padding: 60px 20px;
+    }
+    .cta-box h2 {
+        font-size: 32px;
+    }
+    .cta-box p {
+        font-size: 16px;
+    }
+}

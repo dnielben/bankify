@@ -1,0 +1,36 @@
+.account-summary-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    background-color: var(--white-main);
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radious-sm);
+    padding: 12px 14px;
+}
+
+.account-summary-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.account-summary-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.account-summary-info {
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.account-summary-balance {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--green-main);
+    margin-top: 4px;
+}

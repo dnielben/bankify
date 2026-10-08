@@ -1,0 +1,52 @@
+.bankify-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 700; 
+    font-family: "DM Sans", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid;
+}
+
+.bankify-btn svg {
+    width: 17px;
+    height: 17px;
+}
+
+/* Variante 1: Registrarse (Relleno Verde) */
+.bankify-btn-solid {
+    background-color: var(--green-main);
+    color: var(--white-secondary);
+    border: none;
+    border-radius: var(--radious-sm); 
+}
+
+.bankify-btn-solid:hover {
+    opacity: 0.9;
+}
+
+/* Variante 2: Iniciar Sesión (Borde Verde) */
+.bankify-btn-outline {
+    background-color: transparent;
+    color: var(--green-main);
+    border: 1px solid var(--green-main);
+    border-radius: var(--radious-sm); 
+}
+
+.bankify-btn-outline:hover {
+    background-color: rgba(3, 182, 145, 0.05); 
+}
+
+.bankify-btn-warning {
+    display: flex;
+    background-color: var(--yellow-light);
+    border-color: var(--yellow-main);
+    color: var(--yellow-main);
+    border-radius: var(--radious-lg) !important;
+}

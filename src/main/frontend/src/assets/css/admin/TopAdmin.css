@@ -1,0 +1,31 @@
+.top-admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 2rem;
+}
+
+.top-admin-breadcrumb {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--green-main);
+    margin-bottom: 6px;
+}
+
+.top-admin-info h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--text-main);
+    line-height: 28px;
+    margin-bottom: 4px;
+}
+
+.top-admin-info p {
+    font-size: 14px;
+    color: var(--text-secondary);
+}

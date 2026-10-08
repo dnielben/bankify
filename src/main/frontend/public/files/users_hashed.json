@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "email": "juan.perez@example.com",
+    "password": "896815006b5e2d59d8cacc71832d72a9dee108ca73fc6f16c9425e9188455122",
+    "rol": "client",
+    "nombreCompleto": "Juan Pérez"
+  },
+  {
+    "id": 2,
+    "email": "maria.gomez@example.com",
+    "password": "2249a090f11321a195804ff56a7d1feebcde039f707e7d999a29c2dbeb91fb0e",
+    "rol": "client",
+    "nombreCompleto": "María Gómez"
+  },
+  {
+    "id": 3,
+    "email": "carlos.rodriguez@example.com",
+    "password": "1b80baf386b56e458bfec43b3f9de7ba70daa6b871a760a15a83849cb6751cb4",
+    "rol": "client",
+    "nombreCompleto": "Carlos Rodríguez"
+  },
+  {
+    "id": 4,
+    "email": "ana.martinez@example.com",
+    "password": "598409e31deb1fa052066b98a22e0d07bd1d059e83525e87938d4413d51a5530",
+    "rol": "client",
+    "nombreCompleto": "Ana Martínez"
+  },
+  {
+    "id": 5,
+    "email": "luis.fernandez@example.com",
+    "password": "8659797e1617374bb28ae46534c8d63095cf731901e1411a0f9b64a062482c5f",
+    "rol": "client",
+    "nombreCompleto": "Luis Fernández"
+  },
+  {
+    "id": 6,
+    "email": "sofia.lopez@example.com",
+    "password": "dcc7d5f443a0e699c03a6b08dcb76e50fd9fe26fdecc80ce33190fd42db3f7e1",
+    "rol": "client",
+    "nombreCompleto": "Sofía López"
+  },
+  {
+    "id": 7,
+    "email": "diego.ramirez@example.com",
+    "password": "325671d543527363b94c9d537d06385c3611735c042a41d256d32d78f6559ff6",
+    "rol": "client",
+    "nombreCompleto": "Diego Ramírez"
+  },
+  {
+    "id": 8,
+    "email": "valentina.torres@example.com",
+    "password": "29778938e231424c99d76873451f4fd315f88778f60b4318981e13591d810bae",
+    "rol": "client",
+    "nombreCompleto": "Valentina Torres"
+  },
+  {
+    "id": 9,
+    "email": "andres.morales@example.com",
+    "password": "1082d9aa09db251f9dd924189c728ce64dc98dc60b50b3282ec432da26495865",
+    "rol": "client",
+    "nombreCompleto": "Andrés Morales"
+  },
+  {
+    "id": 10,
+    "email": "camila.vargas@example.com",
+    "password": "21509f9772e136b512f641f696938d6c6148d6d98ff3889b00b54cffb6aa006c",
+    "rol": "client",
+    "nombreCompleto": "Camila Vargas"
+  },
+  {
+    "id": 11,
+    "email": "sebastian.castro@example.com",
+    "password": "934bf65fbaf0b11c58534dac138e7d8cea425336104bd0f3a0afdffed58b6a43",
+    "rol": "client",
+    "nombreCompleto": "Sebastián Castro"
+  },
+  {
+    "id": 12,
+    "email": "laura.ortiz@example.com",
+    "password": "352caec0a868586131f16002208c0d8ff2bc66bcd60d649c1fe44a86e6dc56ff",
+    "rol": "client",
+    "nombreCompleto": "Laura Ortiz"
+  },
+  {
+    "id": 13,
+    "email": "mateo.herrera@example.com",
+    "password": "a7f0276c246b1ab6bcefaa7d09aac6778f9460bc99a8944b91bf992586befe5c",
+    "rol": "client",
+    "nombreCompleto": "Mateo Herrera"
+  },
+  {
+    "id": 14,
+    "email": "isabella.ruiz@example.com",
+    "password": "f2f752dd067bb6ebcaf8d63a2f5dee46b273db19ad6521eab1c82797a6ee9704",
+    "rol": "client",
+    "nombreCompleto": "Isabella Ruiz"
+  },
+  {
+    "id": 15,
+    "email": "nicolas.mendoza@example.com",
+    "password": "081f2c59f57f53a74e651663f451ae2e8c711d4c0f6550b20b3bea1e2725afbe",
+    "rol": "client",
+    "nombreCompleto": "Nicolás Mendoza"
+  },
+  {
+    "id": 16,
+    "email": "gabriela.silva@example.com",
+    "password": "1c222a8b71d2d5ab48db1747549ab629597d725d6c33bde1853c83ff99fe02d1",
+    "rol": "client",
+    "nombreCompleto": "Gabriela Silva"
+  },
+  {
+    "id": 17,
+    "email": "daniel.reyes@example.com",
+    "password": "ad067c535ce4912a9f527d04152e1e27d4787cd428f6551b2d5216d8d38d7357",
+    "rol": "client",
+    "nombreCompleto": "Daniel Reyes"
+  },
+  {
+    "id": 18,
+    "email": "paula.navarro@example.com",
+    "password": "c56393689c5b7d0dc0135ec12e1f7639195b44442fbc74ba7bec2bddcf902a14",
+    "rol": "client",
+    "nombreCompleto": "Paula Navarro"
+  },
+  {
+    "id": 19,
+    "email": "alejandro.rivas@example.com",
+    "password": "2aba88fc8f381a6c5dbe1ec4241c178fe35e7ece765827a30ec847deff8a6435",
+    "rol": "client",
+    "nombreCompleto": "Alejandro Rivas"
+  },
+  {
+    "id": 20,
+    "email": "daniela.vega@example.com",
+    "password": "db400a588b2f609a617bbf12610adcdbbe4c0f633162d0867965e8c8a6bc3194",
+    "rol": "client",
+    "nombreCompleto": "Daniela Vega"
+  }
+]

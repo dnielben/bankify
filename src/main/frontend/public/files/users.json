@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "email": "juan.perez@example.com",
+    "password": "Juan1234",
+    "rol": "client",
+    "nombreCompleto": "Juan Pérez"
+  },
+  {
+    "id": 2,
+    "email": "maria.gomez@example.com",
+    "password": "Maria1234",
+    "rol": "client",
+    "nombreCompleto": "María Gómez"
+  },
+  {
+    "id": 3,
+    "email": "carlos.rodriguez@example.com",
+    "password": "Carlos1234",
+    "rol": "client",
+    "nombreCompleto": "Carlos Rodríguez"
+  },
+  {
+    "id": 4,
+    "email": "ana.martinez@example.com",
+    "password": "Ana1234",
+    "rol": "client",
+    "nombreCompleto": "Ana Martínez"
+  },
+  {
+    "id": 5,
+    "email": "luis.fernandez@example.com",
+    "password": "Luis1234",
+    "rol": "client",
+    "nombreCompleto": "Luis Fernández"
+  },
+  {
+    "id": 6,
+    "email": "sofia.lopez@example.com",
+    "password": "Sofia1234",
+    "rol": "client",
+    "nombreCompleto": "Sofía López"
+  },
+  {
+    "id": 7,
+    "email": "diego.ramirez@example.com",
+    "password": "Diego1234",
+    "rol": "client",
+    "nombreCompleto": "Diego Ramírez"
+  },
+  {
+    "id": 8,
+    "email": "valentina.torres@example.com",
+    "password": "Vale1234",
+    "rol": "client",
+    "nombreCompleto": "Valentina Torres"
+  },
+  {
+    "id": 9,
+    "email": "andres.morales@example.com",
+    "password": "Andres1234",
+    "rol": "client",
+    "nombreCompleto": "Andrés Morales"
+  },
+  {
+    "id": 10,
+    "email": "camila.vargas@example.com",
+    "password": "Camila1234",
+    "rol": "client",
+    "nombreCompleto": "Camila Vargas"
+  },
+  {
+    "id": 11,
+    "email": "sebastian.castro@example.com",
+    "password": "Sebas1234",
+    "rol": "client",
+    "nombreCompleto": "Sebastián Castro"
+  },
+  {
+    "id": 12,
+    "email": "laura.ortiz@example.com",
+    "password": "Laura1234",
+    "rol": "client",
+    "nombreCompleto": "Laura Ortiz"
+  },
+  {
+    "id": 13,
+    "email": "mateo.herrera@example.com",
+    "password": "Mateo1234",
+    "rol": "client",
+    "nombreCompleto": "Mateo Herrera"
+  },
+  {
+    "id": 14,
+    "email": "isabella.ruiz@example.com",
+    "password": "Isa1234",
+    "rol": "client",
+    "nombreCompleto": "Isabella Ruiz"
+  },
+  {
+    "id": 15,
+    "email": "nicolas.mendoza@example.com",
+    "password": "Nico1234",
+    "rol": "client",
+    "nombreCompleto": "Nicolás Mendoza"
+  },
+  {
+    "id": 16,
+    "email": "gabriela.silva@example.com",
+    "password": "Gaby1234",
+    "rol": "client",
+    "nombreCompleto": "Gabriela Silva"
+  },
+  {
+    "id": 17,
+    "email": "daniel.reyes@example.com",
+    "password": "Daniel1234",
+    "rol": "client",
+    "nombreCompleto": "Daniel Reyes"
+  },
+  {
+    "id": 18,
+    "email": "paula.navarro@example.com",
+    "password": "Paula1234",
+    "rol": "client",
+    "nombreCompleto": "Paula Navarro"
+  },
+  {
+    "id": 19,
+    "email": "alejandro.rivas@example.com",
+    "password": "Alejandro1234",
+    "rol": "client",
+    "nombreCompleto": "Alejandro Rivas"
+  },
+  {
+    "id": 20,
+    "email": "daniela.vega@example.com",
+    "password": "Daniela1234",
+    "rol": "client",
+    "nombreCompleto": "Daniela Vega"
+  }
+]

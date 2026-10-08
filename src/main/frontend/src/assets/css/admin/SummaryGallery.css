@@ -1,0 +1,94 @@
+.summary-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 1rem 0;
+}
+
+.summary-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    background-color: var(--white-secondary);
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radious-md);
+    padding: 20px;
+    text-align: left;
+    font-family: "DM Sans", sans-serif;
+    transition: .15s ease-in-out;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+    transition: .15s ease-in;
+}
+
+.summary-card-team {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.summary-card h3 {
+    width: 99%;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-main);
+    line-height: 20px;
+}
+
+.summary-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 1rem;
+    border-radius: var(--radious-lg);
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid var(--yellow-main);
+}
+
+.summary-badge-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: currentColor;
+}
+
+.summary-badge-pending {
+    background-color: var(--yellow-light);
+    color: var(--yellow-main);
+}
+
+.summary-badge-done {
+    background-color: var(--green-light-1);
+    color: var(--green-main);
+    border: 1px solid var(--green-main);
+}
+
+.admin-card-status-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-card-progress {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+    .summary-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 540px) {
+    .summary-gallery {
+        grid-template-columns: 1fr;
+    }
+}

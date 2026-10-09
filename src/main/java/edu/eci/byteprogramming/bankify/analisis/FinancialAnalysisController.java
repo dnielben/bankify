@@ -78,19 +78,25 @@ public class FinancialAnalysisController {
             String finalPrompt = instructions + "\nSolicitud del usuario:\n" + userPrompt
                     + "\n\nTransacciones visibles:\n" + json.writeValueAsString(data.get("transactions"));
 
-            ObjectNode firstRequest = requestFor(finalPrompt, agentMode);
-            JsonNode firstResponse = callGemini(firstRequest);
-            JsonNode modelContent = firstResponse.path("candidates").path(0).path("content");
-            JsonNode functionCall = findFunctionCall(modelContent);
+            ObjectNode request = requestFor(finalPrompt, agentMode);
+            JsonNode response = callGemini(request);
+            List<String> toolsUsed = new ArrayList<>();
 
-            if (!agentMode || functionCall.isMissingNode()) {
-                return Map.of("analysis", readAnswer(firstResponse), "toolsUsed", List.of());
+            // Gemini 3.5 puede pedir una segunda herramienta antes de responder.
+            for (int toolCalls = 0; agentMode && toolCalls < 2; toolCalls++) {
+                JsonNode modelContent = response.path("candidates").path(0).path("content");
+                JsonNode functionCall = findFunctionCall(modelContent);
+                if (functionCall.isMissingNode()) {
+                    break;
+                }
+
+                String toolName = functionCall.path("name").asText();
+                toolsUsed.add(toolName);
+                appendToolResult(request, modelContent, functionCall, runTool(toolName, functionCall.path("args")));
+                response = callGemini(request);
             }
 
-            String toolName = functionCall.path("name").asText();
-            String toolResult = runTool(toolName, functionCall.path("args"));
-            JsonNode finalResponse = callGemini(requestWithToolResult(finalPrompt, modelContent, functionCall, toolResult));
-            return Map.of("analysis", readAnswer(finalResponse), "toolsUsed", List.of(toolName));
+            return Map.of("analysis", readAnswer(response), "toolsUsed", toolsUsed);
         } catch (ResponseStatusException exception) {
             throw exception;
         } catch (Exception exception) {
@@ -120,8 +126,7 @@ public class FinancialAnalysisController {
         return request;
     }
 
-    private ObjectNode requestWithToolResult(String prompt, JsonNode modelContent, JsonNode functionCall, String toolResult) {
-        ObjectNode request = requestFor(prompt, true);
+    private void appendToolResult(ObjectNode request, JsonNode modelContent, JsonNode functionCall, String toolResult) {
         ArrayNode history = (ArrayNode) request.path("contents");
         history.add(modelContent);
         ObjectNode functionResponse = json.createObjectNode();
@@ -132,7 +137,6 @@ public class FinancialAnalysisController {
         functionResponse.putObject("response").put("result", toolResult);
         history.addObject().put("role", "user").putArray("parts")
                 .addObject().set("functionResponse", functionResponse);
-        return request;
     }
 
     private JsonNode callGemini(ObjectNode payload) throws Exception {
